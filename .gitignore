@@ -1,0 +1,12 @@
+# Logs
+logs/*.txt
+
+# Excel Files
+*.xlsx
+
+# Virtual Environment
+.venv/
+
+# API Key
+config.py
+__pycache__/config.cpython-311.pyc

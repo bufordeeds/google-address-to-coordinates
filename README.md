@@ -5,12 +5,14 @@ This Python script uses the Google Maps Geocoding API to convert a list of addre
 ## Prerequisites
 
 - Python 3.x
-- pandas library
-- requests library
+- openpyxl library
+- os module
+- logging module
+- datetime module
 
 ## Usage
 
-1. Replace `'YOUR_API_KEY_HERE'` in the `googleApiAddressToCoord.py` file with your own Google Maps API key.
+1. Create a `config.py` file in the same directory as the `googleApiAddressToCoord.py` file, and add your Google Maps API key to it as a variable named `GOOGLE_MAPS_API_KEY`.
 2. Ensure the `addresses.xlsx` file is in the same directory as the `googleApiAddressToCoord.py` file.
 3. Run the `googleApiAddressToCoord.py` script.
 4. The `address_coordinates.xlsx` file will be created in the same directory, containing the original addresses and their corresponding latitude and longitude coordinates.

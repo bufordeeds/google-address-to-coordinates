@@ -9,4 +9,5 @@ logs/*.txt
 
 # API Key
 config.py
+.env
 __pycache__/config.cpython-311.pyc

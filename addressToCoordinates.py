@@ -78,7 +78,10 @@ def main():
     logger = setup_logging()
 
     # Initialize the Google Maps client
-    api_key = 'REDACTED'  # Replace with your actual API key
+    api_key = os.environ.get('GOOGLE_MAPS_API_KEY')
+    if not api_key:
+        logger.error("GOOGLE_MAPS_API_KEY environment variable is not set.")
+        return
 
     logger.info(f"Attempting to validate API key: {api_key[:5]}...{api_key[-5:]}")
     if not validate_api_key(api_key):
